@@ -5,3 +5,271 @@ body {
   padding: 0;
   font-family: "Lato", sans-serif;
 }
+
+/************** plain css: mobile version *************/
+
+.sub-menu {
+  display: none;
+}
+
+header {
+  min-height: 100vh;
+  background: url(/assets/home-bg-mobile.svg) no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* .contents {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px 10%;
+} */
+
+/* content */
+.contents {
+  display: none;
+}
+
+/* end of content */
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  color: #868686;
+  cursor: pointer;
+}
+
+.camp {
+  text-decoration: none;
+  border: 5px solid #ec5242;
+  color: #ec5242;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.camp:hover {
+  background: #ec5242;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.hero-text {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin-top: 8%;
+}
+
+.text p {
+  color: #ec5242;
+  font-size: 18px;
+}
+
+.text .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: -10px;
+  background-image: url(/assets/text-bg.png);
+  background-position: right;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.sub-title {
+  background: #f8f8f8;
+  border: 8px solid #fff;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 17px;
+  padding: 14px;
+  margin-top: 10%;
+}
+
+.date-venue {
+  padding: 0 7px;
+}
+
+.date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #595959;
+  letter-spacing: -0.08em;
+}
+
+.venue {
+  font-size: 15px;
+  font-weight: 700;
+  color: #868686;
+  letter-spacing: -0.02em;
+  margin-top: -6%;
+}
+
+/*********** tablet version **************/
+@media only screen and (min-width: 768px) {
+  .sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+    padding: 1px 14%;
+    background: #3e3e3e;
+    color: #fff;
+  }
+
+  .sub-menu span {
+    font-size: 13px;
+  }
+
+  header {
+    min-height: 100vh;
+    background: url(./assets/home-bg-desktop.svg);
+    background-size: cover;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 5px 4%;
+  }
+
+  .menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .text {
+    padding: 9px 8%;
+    margin-top: -4%;
+  }
+
+  .text p {
+    font-size: 25px;
+  }
+
+  .text .title {
+    font-size: 35px;
+  }
+
+  .sub-title {
+    width: 475px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 14px;
+    margin-top: -2%;
+    margin-left: 8%;
+  }
+
+  .date-venue {
+    padding: 20px 8%;
+  }
+
+  .date {
+    font-size: 27px;
+    letter-spacing: 0.02em;
+  }
+
+  .venue {
+    font-size: 20px;
+    margin-top: -18px;
+  }
+}
+
+/**************** desktop version ****************/
+@media only screen and (min-width: 1024px) {
+  .sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 12px;
+    padding: 1px 14%;
+    background: #3e3e3e;
+    color: #fff;
+  }
+
+  .sub-menu span {
+    font-size: 14px;
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 5px 0;
+  }
+
+  .menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+  }
+
+  .text {
+    padding: 10px 10%;
+    margin-top: 5%;
+  }
+
+  .text .title {
+    font-size: 48px;
+    margin-left: -10%;
+    padding: 0 10%;
+  }
+
+  .sub-title {
+    width: 640px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 14px;
+    margin-top: -20px;
+    margin-left: 10%;
+  }
+
+  .date-venue {
+    padding: 20px 10%;
+  }
+
+  .date {
+    font-size: 42px;
+  }
+
+  .venue {
+    font-size: 27px;
+    margin-top: -4%;
+  }
+}
