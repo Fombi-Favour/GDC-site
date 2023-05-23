@@ -140,7 +140,7 @@ header {
   padding: 10px 20px;
 }
 
-.program-title {
+.titles {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -148,7 +148,7 @@ header {
   padding: 10px;
 }
 
-.program-title::before {
+.titles::before {
   content: "";
   position: absolute;
   display: block;
@@ -211,6 +211,78 @@ header {
   text-align: center;
   padding: 20px 50px;
   margin-top: 28px;
+}
+
+/************* speakers section ******************/
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+}
+
+.speakers-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 5px;
+}
+
+.about h3 {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about h5 {
+  font-size: 10px;
+  font-weight: 700;
+  color: #f78c89;
+  margin-top: -10px;
+  letter-spacing: -0.02em;
+}
+
+.about h5::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-top: 8px;
+  background: #d9d9d9d9;
+}
+
+.about p {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.06em;
+}
+
+.btn-extend {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 15px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
 }
 
 /*********** tablet version **************/
@@ -307,6 +379,11 @@ header {
     padding: 10px 15%;
   }
 
+  .titles {
+    font-size: 30px;
+    padding: 10px;
+  }
+
   .details {
     flex-direction: row;
   }
@@ -339,6 +416,30 @@ header {
   }
 
   .mobile-text {
+    display: none;
+  }
+
+  /************* speakers section ******************/
+  .speakers-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about h3 {
+    font-size: 25px;
+  }
+
+  .about h5 {
+    font-size: 14px;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05em;
+  }
+
+  .btn-extend {
     display: none;
   }
 }
@@ -427,5 +528,10 @@ header {
   .detail-col p {
     font-size: 14px;
     line-height: 25px;
+  }
+
+  /************* speakers section ******************/
+  .speakers-list {
+    padding: 0 40px;
   }
 }
