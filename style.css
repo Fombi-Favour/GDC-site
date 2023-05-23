@@ -8,6 +8,7 @@ body {
 
 /************** plain css: mobile version *************/
 
+/************* header section ******************/
 .sub-menu {
   display: none;
 }
@@ -127,7 +128,94 @@ header {
   margin-top: -6%;
 }
 
+/************* program section ******************/
+.program {
+  background: url(/assets/program-bg-mobile.svg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.program-title {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  position: relative;
+  padding: 10px;
+}
+
+.program-title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  bottom: 0;
+  background: #a04038;
+  left: 40%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.detail-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding: 12px;
+  background: #d3d3d321;
+  transition: 0.6s;
+}
+
+.detail-col:hover {
+  border: 2.5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+}
+
+.detail-col h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff5438;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+}
+
+.detail-col p {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+}
+
+.desktop-text {
+  display: none;
+}
+
+.mobile-text {
+  text-decoration: none;
+  background: #ff5438;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 28px;
+}
+
 /*********** tablet version **************/
+
+/************* header section ******************/
 @media only screen and (min-width: 768px) {
   .sub-menu {
     display: flex;
@@ -159,6 +247,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 5px 4%;
   }
 
@@ -205,10 +294,59 @@ header {
     font-size: 20px;
     margin-top: -18px;
   }
+
+  /************* program section ******************/
+  .program {
+    background: url(/assets/prgram-bg-desktop.svg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15%;
+  }
+
+  .details {
+    flex-direction: row;
+  }
+
+  .detail-col {
+    width: 120px;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0;
+  }
+
+  .detail-col h2 {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .detail-col p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  .desktop-text {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  .mobile-text {
+    display: none;
+  }
 }
 
 /**************** desktop version ****************/
+
 @media only screen and (min-width: 1024px) {
+  /************* header section ******************/
   .sub-menu {
     display: flex;
     align-items: center;
@@ -271,5 +409,23 @@ header {
   .venue {
     font-size: 27px;
     margin-top: -4%;
+  }
+
+  /************* program section ******************/
+  .detail-col {
+    width: 160px;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0;
+  }
+
+  .detail-col h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .detail-col p {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
