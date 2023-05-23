@@ -1,0 +1,169 @@
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/************** plain css: mobile version *************/
+.about {
+  min-height: 100vh;
+  background: url(/assets/about-bg-mobile.svg) no-repeat;
+  background-size: cover;
+}
+
+.menu-list .key {
+  color: #ec5242;
+}
+
+.linage {
+  display: none;
+}
+
+.about-text {
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texts p {
+  color: #ec5242;
+  font-size: 18px;
+  text-align: center;
+}
+
+.texts .title {
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 28px;
+  margin: 0;
+}
+
+.sub-text {
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: -0.06em;
+  padding: 20px 12px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me p {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.contact-me a {
+  color: #5f5f5f;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+/*********** tablet version **************/
+@media only screen and (min-width: 768px) {
+  /************* header section ******************/
+  .about {
+    min-height: 150vh;
+    background: url(/assets/about-bg-desktop.svg) no-repeat;
+  }
+
+  .linage {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 6px;
+    padding: 0 16px;
+  }
+
+  .linage li a {
+    text-decoration: none;
+    color: #595959;
+  }
+
+  .about-text {
+    padding: 8% 0;
+  }
+
+  .texts {
+    padding: 0 10%;
+  }
+
+  .texts .title {
+    font-size: 45px;
+    line-height: 42px;
+  }
+
+  .texts .title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #ec5242;
+    margin-top: 8%;
+    left: 48%;
+  }
+
+  .texts .hello {
+    display: none;
+  }
+
+  .sub-text {
+    margin: 10% 15%;
+  }
+
+  .contact-me {
+    margin-top: -6%;
+  }
+}
+
+/**************** desktop version ****************/
+
+@media only screen and (min-width: 1024px) {
+  /************* header section ******************/
+
+  .texts {
+    padding: 0 18%;
+  }
+
+  .texts .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .texts .title::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: #ec5242;
+    margin-top: 5%;
+    left: 48%;
+  }
+
+  .sub-text {
+    margin: 5% 10%;
+  }
+
+  .contact-me {
+    margin-top: 0;
+  }
+}
