@@ -77,11 +77,63 @@ body {
   letter-spacing: 0.02em;
 }
 
+/************* logo-info section ******************/
+.logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background: #fff;
+  border-bottom: 2px solid #e0e2e7;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-info img {
+  width: 20%;
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2c2c;
+  letter-spacing: -0.02em;
+}
+
+.logo-title::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #ec5242;
+  margin-top: 30px;
+  left: 43%;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 14px;
+}
+
+.logo-text p {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #838383;
+  letter-spacing: -0.03em;
+}
+
+.hidden-text {
+  display: none;
+}
+
 /*********** tablet version **************/
 @media only screen and (min-width: 768px) {
   /************* header section ******************/
   .about {
-    min-height: 150vh;
+    min-height: 10vh;
     background: url(/assets/about-bg-desktop.svg) no-repeat;
   }
 
@@ -100,7 +152,8 @@ body {
   }
 
   .about-text {
-    padding: 8% 0;
+    padding: 11px 0;
+    margin: 0;
   }
 
   .texts {
@@ -109,7 +162,7 @@ body {
 
   .texts .title {
     font-size: 45px;
-    line-height: 42px;
+    line-height: 48px;
   }
 
   .texts .title::after {
@@ -132,6 +185,25 @@ body {
 
   .contact-me {
     margin-top: -6%;
+  }
+
+  /************* logo-info section ******************/
+  .logo-title {
+    font-size: 30px;
+  }
+
+  .logo-title::after {
+    margin-top: 42px;
+    left: 47%;
+  }
+
+  .logo-text {
+    padding: 0 20%;
+  }
+
+  .hidden-text {
+    display: block;
+    margin-top: -16px;
   }
 }
 
