@@ -319,14 +319,14 @@ header {
 /************* footer section ******************/
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 22px;
   background: #f2f2f2;
+  gap: 14px;
 }
 
 .frame {
-  width: 38%;
+  width: 30%;
 }
 
 .info {
@@ -336,9 +336,9 @@ footer {
 }
 
 .info p {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 16px;
   letter-spacing: -0.04em;
 }
 
@@ -346,6 +346,10 @@ footer {
   cursor: pointer;
   text-decoration: none;
   color: #000;
+}
+
+.hidden {
+  display: none;
 }
 
 /*********** tablet version **************/
@@ -521,8 +525,8 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 22px 20%;
-    gap: 20%;
+    padding: 22px 17%;
+    gap: 16%;
     background: #f2f2f2;
   }
 
@@ -537,9 +541,9 @@ footer {
   }
 
   .info p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 18px;
     letter-spacing: -0.04em;
   }
 
@@ -547,6 +551,11 @@ footer {
     cursor: pointer;
     text-decoration: none;
     color: #000;
+  }
+
+  .hidden {
+    display: block;
+    margin-top: -10px;
   }
 }
 
