@@ -53,10 +53,12 @@ const speakers = [
 speakers.forEach((speaker) => {
   speakersList.innerHTML += `
     <div class="speaker" id='${speaker.id}'>
-      <img src="${speaker.image}" class="pic" alt="speakers">
+      <div class="speaker-pic">
+        <img src="${speaker.image}" alt="speakers">
+      </div>
       <div class="about">
         <h3>${speaker.name}</h3>
-        <h5>${speaker.role}</h5>
+        <i>${speaker.role}</i>
         <p>${speaker.description}</p>
       </div>
     </div>
