@@ -320,14 +320,15 @@ header {
 
 .list {
   padding: 15px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  grid-gap: 10px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .list img {
-  width: 90%;
+  width: 30%;
   filter: grayscale(100%);
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 150ms;
 }
@@ -555,8 +556,9 @@ footer {
   }
 
   /************* partners section ******************/
-  .list {
-    grid-template-columns: repeat(6, 1fr);
+  /* stylelint-disable-next-line no-descending-specificity */
+  .list img {
+    width: 20%;
   }
 
   .list img:hover {
@@ -699,5 +701,10 @@ footer {
   /************* speakers section ******************/
   .speakers-list {
     padding: 0 40px;
+  }
+
+  /************* partners section ******************/
+  .list img {
+    width: 10%;
   }
 }
