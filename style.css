@@ -399,7 +399,7 @@ footer {
 
   .content {
     position: fixed;
-    top: 4.8%;
+    top: 4%;
     left: 0;
     right: 0;
     display: flex;
@@ -691,14 +691,17 @@ footer {
     margin-top: 5%;
   }
 
+  .text p {
+    font-size: 35px;
+  }
+
   .text .title {
     font-size: 48px;
-    margin-left: -10%;
-    padding: 0 10%;
+    font-weight: 900;
   }
 
   .sub-title {
-    width: 680px;
+    width: 720px;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 24px;
@@ -717,7 +720,7 @@ footer {
 
   .venue {
     font-size: 27px;
-    margin-top: -4%;
+    margin-top: -3%;
   }
 
   /************* program section ******************/
