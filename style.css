@@ -101,12 +101,12 @@ header {
 
 .text p {
   color: #ec5242;
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .text .title {
   text-align: left;
-  font-size: 25px;
+  font-size: 40px;
   font-weight: 900;
   margin-top: -10px;
   background-image: url(/assets/text-bg.png);
@@ -254,37 +254,53 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 5px;
+}
+
+.speaker-pic {
+  background: url(/assets/speakers/bg.jpg) no-repeat;
+  background-size: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0;
+}
+
+.speaker-pic img {
+  padding: 18px;
+}
+
+.about {
+  margin-left: -10px;
 }
 
 .about h3 {
   font-size: 15px;
   font-weight: 700;
+  margin: -2px;
   letter-spacing: -0.02em;
 }
 
-.about h5 {
+.about i {
   font-size: 10px;
   font-weight: 700;
   color: #f78c89;
-  margin-top: -10px;
   letter-spacing: -0.02em;
 }
 
-.about h5::after {
+.about i::after {
   content: "";
-  position: absolute;
   display: block;
-  width: 30px;
+  width: 20px;
   height: 2px;
-  margin-top: 8px;
+  margin-top: 7px;
   background: #d9d9d9d9;
 }
 
 .about p {
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 500;
+  color: #000000a8;
+  margin-top: 3%;
   line-height: 14px;
   letter-spacing: -0.06em;
 }
@@ -309,33 +325,7 @@ header {
 
 /************* partners section ******************/
 .partners {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #272a31;
-  color: #fff;
-  padding: 20px 28px;
-}
-
-.list {
-  padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.list img {
-  width: 30%;
-  filter: grayscale(100%);
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 150ms;
-}
-
-.list img:hover {
-  filter: grayscale(0);
-  scale: 1.78;
+  display: none;
 }
 
 /************* footer section ******************/
@@ -379,6 +369,11 @@ footer {
 /************* header section ******************/
 @media only screen and (min-width: 768px) {
   .sub-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -404,7 +399,7 @@ footer {
 
   .content {
     position: fixed;
-    top: 0;
+    top: 4.8%;
     left: 0;
     right: 0;
     display: flex;
@@ -438,7 +433,7 @@ footer {
   }
 
   .hero-text {
-    padding-top: 10%;
+    padding-top: 20%;
   }
 
   .text {
@@ -537,18 +532,30 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about h3 {
-    font-size: 25px;
+  .speaker {
+    padding: 8px 12px;
   }
 
-  .about h5 {
-    font-size: 14px;
+  .about {
+    margin-left: 0;
+  }
+
+  .about h3 {
+    font-size: 17px;
+  }
+
+  .about i {
+    font-size: 11px;
+  }
+
+  .about i::after {
+    margin-top: 8px;
   }
 
   .about p {
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.05em;
+    font-size: 12px;
+    margin-top: 4%;
+    line-height: 19px;
   }
 
   .btn-extend {
@@ -556,12 +563,34 @@ footer {
   }
 
   /************* partners section ******************/
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #272a31;
+    color: #fff;
+    padding: 20px 28px;
+  }
+
+  .list {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
   /* stylelint-disable-next-line no-descending-specificity */
   .list img {
     width: 20%;
+    filter: grayscale(100%);
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 150ms;
   }
 
   .list img:hover {
+    filter: grayscale(0);
     scale: 2;
   }
 
@@ -571,7 +600,7 @@ footer {
     flex-direction: row;
     align-items: center;
     padding: 22px 17%;
-    gap: 16%;
+    gap: 22px;
     background: #f2f2f2;
   }
 
@@ -610,10 +639,12 @@ footer {
   /************* header section ******************/
   .sub-menu {
     display: flex;
+    position: fixed;
+    top: 0;
     align-items: center;
     justify-content: end;
     gap: 12px;
-    padding: 1px 14%;
+    padding: 5px 14%;
     background: #3e3e3e;
     color: #fff;
   }
@@ -624,6 +655,7 @@ footer {
 
   .content {
     display: flex;
+    top: 4.2%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -639,11 +671,19 @@ footer {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 20%;
+    gap: 14%;
+  }
+
+  .menu-list li a {
+    font-size: 19px;
+  }
+
+  .camp {
+    margin-right: -50px;
   }
 
   .hero-text {
-    padding-top: 0;
+    padding-top: 8%;
   }
 
   .text {
@@ -658,9 +698,9 @@ footer {
   }
 
   .sub-title {
-    width: 640px;
+    width: 680px;
     box-sizing: border-box;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 24px;
     padding: 14px;
     margin-top: -20px;
@@ -701,6 +741,37 @@ footer {
   /************* speakers section ******************/
   .speakers-list {
     padding: 0 40px;
+  }
+
+  .about {
+    margin-left: 0;
+  }
+
+  .about h3 {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
+  .about i {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f78c89;
+    letter-spacing: -0.02em;
+  }
+
+  .about i::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 10px;
+    background: #d9d9d9d9;
+  }
+
+  .about p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 10px;
   }
 
   /************* partners section ******************/
