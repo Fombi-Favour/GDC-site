@@ -7,7 +7,7 @@ function showMenu() {
 }
 
 function hideMenu() {
-  contentLink.style.left = '-900px';
+  contentLink.style.left = '-918px';
 }
 
 menu.addEventListener('click', () => {
