@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
 
 body {
   margin: 0;
@@ -34,7 +34,7 @@ header {
   background: url(/assets/frame-text.png) no-repeat;
   position: fixed;
   top: 0;
-  left: -900px;
+  left: -918px;
   z-index: 5;
   mix-blend-mode: multiply;
   backdrop-filter: blur(6px);
@@ -129,10 +129,12 @@ header {
 
 .date-venue {
   padding: 0 7px;
+  display: flex;
+  flex-direction: column;
 }
 
 .date {
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: "COCOGOOSE", sans-serif;
   font-size: 20px;
   font-weight: 900;
   color: #595959;
@@ -144,7 +146,7 @@ header {
   font-weight: 700;
   color: #868686;
   letter-spacing: -0.02em;
-  margin-top: -6%;
+  margin-top: -3%;
 }
 
 /************* program section ******************/
@@ -400,14 +402,26 @@ footer {
   }
 
   .content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 18%;
     background: #fff;
+    z-index: 100000;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 5px 4%;
+  }
+
+  .content a img {
+    width: 70%;
+  }
+
+  .contents {
+    display: none;
   }
 
   .menu-list {
@@ -420,6 +434,10 @@ footer {
   .menu-list li a {
     font-size: 14px;
     color: #868686;
+  }
+
+  .hero-text {
+    padding-top: 10%;
   }
 
   .text {
@@ -602,7 +620,7 @@ footer {
     font-size: 14px;
   }
 
-  .contents {
+  .content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -611,11 +629,19 @@ footer {
     padding: 5px 0;
   }
 
+  .contents {
+    display: none;
+  }
+
   .menu-list {
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 20%;
+  }
+
+  .hero-text {
+    padding-top: 0;
   }
 
   .text {
