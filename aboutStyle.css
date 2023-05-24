@@ -8,9 +8,10 @@ body {
 
 /************** plain css: mobile version *************/
 .about {
-  min-height: 100vh;
+  min-height: 40vh;
   background: url(/assets/about-bg-mobile.svg) no-repeat;
   background-size: cover;
+  padding-bottom: 16px;
 }
 
 .menu-list .key {
