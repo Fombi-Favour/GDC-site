@@ -23,11 +23,11 @@
     <header>
       <nav>
         <img src="/assets/menu.png" class="menu" alt="menu">
+        <!-- desktop-menu -->
         <div class="content">
-          <img src="/assets/close.png" id="close" alt="close">
-          <a href="index.html" onclick="hideMenu()"><img src="/assets/logo.png" alt="logo"></a>
+          <a href="index.html"><img src="/assets/logo.png" alt="logo"></a>
           <ul class="menu-list">
-            <li><a href="about.html" onclick="hideMenu()">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Program</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Sponsor</a></li>
@@ -35,17 +35,18 @@
           </ul>
           <a href="" class="camp">GDC Campaign</a>
         </div>
+        <!-- mobile menu -->
         <div class="contents" id="contentLink">
           <img src="/assets/close.png" id="close" alt="close">
           <a href="index.html" onclick="hideMenu()"><img src="/assets/logo.png" alt="logo"></a>
           <ul class="menu-list">
             <li><a href="about.html" onclick="hideMenu()">About</a></li>
-            <li><a href="#">Program</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Sponsor</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="#" onclick="hideMenu()">Program</a></li>
+            <li><a href="#" onclick="hideMenu()">Join</a></li>
+            <li><a href="#" onclick="hideMenu()">Sponsor</a></li>
+            <li><a href="#" onclick="hideMenu()">News</a></li>
           </ul>
-          <a href="" class="camp">GDC Campaign</a>
+          <a href="" class="camp" onclick="hideMenu()">GDC Campaign</a>
         </div>
       </nav>
       <div class="hero-text">
