@@ -24,10 +24,23 @@
     <header class="about">
       <nav>
         <img src="/assets/menu.png" class="menu" alt="menu">
-        <div class="contents">
-          <a href="index.html"><img src="/assets/logo.png" alt="logo"></a>
+        <div class="content">
+          <img src="/assets/close.png" id="close" alt="close">
+          <a href="index.html" onclick="hideMenu()"><img src="/assets/logo.png" alt="logo"></a>
           <ul class="menu-list">
-            <li><a href="about.html" class="key">About</a></li>
+            <li><a href="about.html" onclick="hideMenu()">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+          <a href="" class="camp">GDC Campaign</a>
+        </div>
+        <div class="contents" id="contentLink">
+          <img src="/assets/close.png" id="close" alt="close">
+          <a href="index.html" onclick="hideMenu()"><img src="/assets/logo.png" alt="logo"></a>
+          <ul class="menu-list">
+            <li><a href="about.html" onclick="hideMenu()" class="key">About</a></li>
             <li><a href="#">Program</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Sponsor</a></li>
@@ -108,5 +121,6 @@
         For detailed usage, function details and permission conditions, see <a href="https://gdconf.com/">https://gdconf.com/</a></p>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
