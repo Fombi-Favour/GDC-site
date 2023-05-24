@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet" />
+    <title>Capstone 1</title>
+  </head>
+  <body>
+    <main class="sub-menu">
+      <img src="/assets/facebook.png" alt="facebook">
+      <img src="/assets/twitter.png" alt="twitter">
+      <span>English</span>
+      <span>My Page</span>
+      <span>Logout</span>
+    </main>
+    <!-- header section -->
+    <header>
+      <nav>
+        <img src="/assets/menu.png" class="menu" alt="menu">
+        <!-- desktop-menu -->
+        <div class="content">
+          <a href="index.html"><img src="/assets/logo.png" alt="logo"></a>
+          <ul class="menu-list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Sponsor</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+          <a href="" class="camp">GDC Campaign</a>
+        </div>
+        <!-- mobile menu -->
+        <div class="contents" id="contentLink">
+          <img src="/assets/close.png" id="close" alt="close">
+          <a href="index.html" onclick="hideMenu()"><img src="/assets/logo.png" alt="logo"></a>
+          <ul class="menu-list">
+            <li><a href="about.html" onclick="hideMenu()">About</a></li>
+            <li><a href="#" onclick="hideMenu()">Program</a></li>
+            <li><a href="#" onclick="hideMenu()">Join</a></li>
+            <li><a href="#" onclick="hideMenu()">Sponsor</a></li>
+            <li><a href="#" onclick="hideMenu()">News</a></li>
+          </ul>
+          <a href="" class="camp" onclick="hideMenu()">GDC Campaign</a>
+        </div>
+      </nav>
+      <div class="hero-text">
+        <div class="text">
+          <p>"Hello! Sharing world"</p>
+          <p class="title">GAME DEVELOPERS <br> CONFERENCE SHOWCASE <br> 2022</p>
+        </div>
+        <p class="sub-title"> A joyful celebration believing in the value of openness and sharing, creating a positive change with people from over 80 countries is taking place in March, in USA.</p>
+        <div class="date-venue">
+          <p class="date">2022-03-21(MON) ~ 25(FRI)</p>
+          <p class="venue">@ Moscone Center San Francisco, CA USA</p>
+        </div>
+      </div>
+    </header>
+    <!-- Program section -->
+    <section class="program">
+      <h2 class="titles">Main Program</h2>
+      <div class="details">
+        <!-- program 1 -->
+        <div class="detail-col">
+          <img src="/assets/pro1.png" alt="detail1">
+          <h2>Lecture</h2>
+          <p>Listen to the speakers from various countries about the messages of sharing and opening.</p>
+        </div>
+        <!-- program 2 -->
+        <div class="detail-col">
+          <img src="/assets/pro2.png" alt="detail2">
+          <h2>GDC Exhibition</h2>
+          <p>Appreciate various creations applying GDC license of artists, organized from GDC home office.</p>
+        </div>
+        <!-- program 3 -->
+        <div class="detail-col">
+          <img src="/assets/pro3.png" alt="detail3">
+          <h2>Forum</h2>
+          <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
+        </div>
+        <!-- program 4 -->
+        <div class="detail-col">
+          <img src="/assets/pro4.png" alt="detail4">
+          <h2>Workshop</h2>
+          <p>Try creating your own work using open source license rather than just watching at it.</p>
+        </div>
+        <!-- program 5 -->
+        <div class="detail-col">
+          <img src="/assets/pro5.png" alt="detail5">
+          <h2>GDC Ignite</h2>
+          <p>Get opportunities to network with GDC affiliates around the world, also after the conference.</p>
+        </div>
+      </div>
+      <a href="#" class="desktop-text">see the whole program</a>
+      <a href="#" class="mobile-text">Join GDC 2022</a>
+    </section>
+    <!-- featured speakers section -->
+    <section class="speakers">
+      <h2 class="titles">Featured Speakers</h2>
+      <div class="speakers-list"></div>
+      <button type="button" class="btn-extend">
+        <span class="btn-text">More</span>
+        <img src="/assets/arrow_down.png" class="btn-pic" alt="down">
+      </button>
+    </section>
+    <!-- partners section -->
+    <section class="partners">
+      <h2 class="titles">Partners</h2>
+      <div class="list">
+        <img src="/assets/partners/partner1.png" alt="partners">
+        <img src="/assets/partners/partner2.png" alt="partners">
+        <img src="/assets/partners/partner3.png" alt="partners">
+        <img src="/assets/partners/partner4.png" alt="partners">
+        <img src="/assets/partners/partner5.png" alt="partners">
+        <img src="/assets/partners/partner6.png" alt="partners">
+        <img src="/assets/partners/partner7.png" alt="partners">
+        <img src="/assets/partners/partner8.png" alt="partners">
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer>
+      <img src="/assets/frame-logo.png" class="frame" alt="logo">
+      <div class="info">
+        <p>2022 Game Developers Conference. Some Rights Reserved.</p>
+        <p class="hidden">All contents on this website, unless stated otherwise, is at GDC in USA.
+        For detailed usage, function details and permission conditions, see <a href="https://gdconf.com/">https://gdconf.com/</a></p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="expand.js"></script>
+  </body>
+</html>
