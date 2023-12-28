@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link. Click here!](https://fombi-favour.github.io/microverse-capstone-1/)
+- [Live Demo Link. Click here!](https://gdc2022.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
